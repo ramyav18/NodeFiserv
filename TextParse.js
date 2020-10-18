@@ -23,7 +23,7 @@ app.post('/api/v1/parse', urlencodedParser, function (req, res) {
   res.status(500).send("An error occured..");
   } 
 })  
-app.post('/api/v12/parse', urlencodedParser, function (req, res) { 
+app.post('/api/v2/parse', urlencodedParser, function (req, res) { 
   try{ 
   var data = req.data;
   var splitdata = data.split("0000");
